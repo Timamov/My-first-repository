@@ -36,3 +36,6 @@ for element in exterior_design_print_equipment2:
 
 information_about_panoramic_glass_roof_with_hatch = equipment2['panoramic_glass_roof_with_hatch']
 print(information_about_panoramic_glass_roof_with_hatch)
+obj = {
+    'Ukraine': 1_2_000
+}
