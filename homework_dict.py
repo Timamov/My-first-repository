@@ -42,13 +42,14 @@ students['Peter McJack'] = {
         'Середній бал': 91
     }
 total_average_score_of_students = 0
+score_sum = 0
 for student, student_data in students.items():
     if student_data['Середній бал'] >= 90:
         print(student)
         print(student_data['Середній бал'])
-    if student_data['Номер телефону'] == None:
+    if student_data['Номер телефону'] is None:
         student_data['Номер телефону'] = '+380665437892'
-    total_average_score_of_students += student_data['Середній бал'] / len(students)
+    score_sum += student_data['Середній бал']
+total_average_score_of_students += score_sum / len(students)
 print(total_average_score_of_students)
 print(students)
-pass
