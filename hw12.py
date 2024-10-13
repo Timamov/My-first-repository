@@ -18,5 +18,3 @@ url_picture = "https://cdn.dummyjson.com/products/images/smartphones/Vivo%20V9/3
 response1 = requests.get(url_picture)
 with open('phone.png', mode='wb') as file:
     file.write(response1.content)
-
-pass
