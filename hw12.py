@@ -12,9 +12,9 @@ for product in products:
     if product['price'] >= 800:
         cost = product['price'] * product['stock']
 # print('General products cost, which price is more than 800$', cost)
+    if product['id'] == 135:
+        with open('phone.png', mode='wb') as file:
+            file.write(product.get('image')[2].content())
 
 # 2
-url_picture = "https://cdn.dummyjson.com/products/images/smartphones/Vivo%20V9/3.png"
-response1 = requests.get(url_picture)
-with open('phone.png', mode='wb') as file:
-    file.write(response1.content)
+
