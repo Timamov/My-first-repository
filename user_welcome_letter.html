@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <title>Title</title>
+        <style>
+            h1{
+                font-weight: normal;
+                text-align: center;
+            }
+            body{
+                font-family: Arial;
+                background-color: coral;
+            }
+        </style>
+    </head>
+    <body>
+    <h1>Header</h1>
+        <p>Good afternoon, dear {{ name }}! I know you are {{ age }} years old. So, go to the prettiest hiking!.</p>
+    <h3>Your hobbies</h3>
+    <ol>
+        {% for hobby in hobbies %}
+            <li>{{ hobby }}</li>
+        {% endfor %}
+            
+        </ol>
+    </body>
+</html>

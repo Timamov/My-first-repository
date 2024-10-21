@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial;
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+   <h1>{{ animal_name }}</h1>
+    <p>{{ animal_name }} is one of the largest and most interesting animals in our zoo.
+    Our zoo was fortunate to acquire this incredible creature, and maintaining it requires significant resources.
+    The monthly cost of care is {{ animal_cost }}$. It takes expert handlers to work with such a majestic creature.
+    Join us in helping to take care of these magnificent animals!</p>
+
+    {% if is_poisonous %}
+        <h3>Warning! Animal is poisonous</h3>
+    {% else %}
+        <h3>This animal isn't poisonous</h3>
+    {% endif %}
+
+
+</body>
+</html>
