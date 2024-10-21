@@ -40,7 +40,8 @@ def render_html(html_path: str, params: dict) -> str:
 pass
 params = {
     'animal_name': most_expensive_animal['Animal_name'],
-    'animal_cost': most_expensive_animal['Price_for_keeping_on_eye']
+    'animal_cost': most_expensive_animal['Price_for_keeping_on_eye'],
+    'is_poisonous': most_expensive_animal['Is_it_poisonous']
 }
 
 output_html = render_html('hw13.html', params)
@@ -53,4 +54,4 @@ send_email(
         ['timov31@ukr.net'],
         output_html,
         'mail subject',
-    )
+ )
