@@ -1,12 +1,12 @@
 import random
 def check_number_decorator(func):
-    def wrapper(number):
-        result = 0
-        if type(number) is int:
-            result = number + 10
+    def wrapper(*args, **kwargs):
+        result = func(*args, **kwargs)
+        if type(*args) is int:
+            modified_result = {'number': result + 10}
         else:
-            result = number
-        return func(result)
+            modified_result = {'number': result}
+        return modified_result
     return wrapper
 
 @check_number_decorator
