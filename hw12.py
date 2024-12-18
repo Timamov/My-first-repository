@@ -17,4 +17,5 @@ for product in products:
             file.write(product.get('image')[2].content())
 
 # 2
+bool
 
